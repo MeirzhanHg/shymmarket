@@ -19,6 +19,10 @@
          padding: 0 10px;
       }
    }
+
+   .category_info {
+      max-width: 100%;
+   }
 }
 
 @media (max-width: 992px) {
@@ -44,12 +48,57 @@
          font-size: 24px;
       }
    }
+
+   .category {
+      &_column {
+         flex: 0 1 50%;
+      }
+
+      &_label {
+         font-size: 26px;
+      }
+
+      &_name {
+         font-size: 48px;
+      }
+
+      &_address {
+         font-size: 26px;
+      }
+
+      &_address2 {
+         font-size: 18px;
+      }
+   }
 }
 
 @media (max-width : 768px) {
    .hero {
       &_title {
          font-size: 44px;
+      }
+   }
+
+   .category {
+      &_items {
+         margin: 40px -10px 0px -10px;
+      }
+
+      &_column {
+         padding: 0 10px;
+         margin: 0px 0px 25px 0px;
+      }
+
+      &_bg {
+         padding: 150px 0 20px 20px;
+      }
+
+      &_name {
+         font-size: 40px;
+      }
+
+      &_address {
+         font-size: 20px;
       }
    }
 }
@@ -200,9 +249,34 @@
          font-size: 20px;
       }
    }
+
+   .category {
+
+      &_items {
+         margin: 25px 0px 0px 0px;
+      }
+
+      &_column {
+         padding: 0px;
+         flex: 1 1 100%;
+      }
+
+
+      &_name {
+         font-size: 32px;
+      }
+
+      &_address {
+         font-size: 18px;
+      }
+   }
 }
 
 @media (max-width: 480px) {
+   .header__logo {
+      max-width: 140px;
+   }
+
    .hero {
       padding: 50px 0;
 
@@ -228,8 +302,8 @@
       }
 
       &_button {
-         margin: 0px 25px 0px 0px;
-
+         margin: 0px 0px 15px 0px;
+         flex: 1 1 100%;
       }
    }
 
@@ -242,6 +316,12 @@
          font-size: 18px;
          width: 37px;
          height: 37px;
+      }
+   }
+
+   .category {
+      &_bg {
+         padding-top: 130px;
       }
    }
 }
