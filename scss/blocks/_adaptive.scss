@@ -1,4 +1,4 @@
-@media (min-width: 767px) {
+@media (min-width: 570px) {
    .menu__list {
       display: flex;
       align-items: center;
@@ -6,5 +6,242 @@
 
    .menu__list>li {
       padding: 10px 0px;
+   }
+}
+
+@media (max-width : 1200px) {
+   .cards {
+      &_items {
+         margin: 0 -10px;
+      }
+
+      &_column {
+         padding: 0 10px;
+      }
+   }
+}
+
+@media (max-width: 992px) {
+
+   .hero {
+      &_title {
+         font-size: 58px;
+      }
+   }
+
+   .cards {
+      &_items {
+         flex-wrap: wrap;
+         margin: 0 -10px;
+      }
+
+      &_column {
+         flex: 0 1 50%;
+         padding: 0 10px;
+      }
+
+      &_num {
+         font-size: 24px;
+      }
+   }
+}
+
+@media (max-width : 768px) {
+   .hero {
+      &_title {
+         font-size: 44px;
+      }
+   }
+}
+
+@media (max-width: 570px) {
+   main {
+      margin: 70px 0px 0px 0px;
+   }
+
+   .header {
+      &__logo {
+         position: relative;
+         z-index: 5;
+      }
+
+      &_wrapper {
+         z-index: 5;
+         position: relative;
+      }
+
+      &__container {
+         min-height: 70px;
+      }
+   }
+
+   .menu__icon {
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 18px;
+      cursor: pointer;
+   }
+
+   .menu__icon span,
+   .menu__icon::before,
+   .menu__icon::after {
+      left: 0;
+      position: absolute;
+      height: 10%;
+      width: 100%;
+      transition: all 0.3s ease 0s;
+      background-color: #000;
+   }
+
+   .menu__icon::before,
+   .menu__icon::after {
+      content: "";
+   }
+
+   .menu__icon::before {
+      top: 0;
+   }
+
+   .menu__icon::after {
+      bottom: 0;
+   }
+
+   .menu__icon span {
+      top: 50%;
+      transform: scale(1) translate(0px, -50%);
+   }
+
+   .menu__icon._active span {
+      transform: scale(0) translate(0px, -50%);
+   }
+
+   .menu__icon._active::before {
+      top: 50%;
+      transform: rotate(-45deg) translate(0px, -50%);
+   }
+
+   .menu__icon._active::after {
+      bottom: 50%;
+      transform: rotate(45deg) translate(0px, 50%);
+   }
+
+
+   .menu__body {
+      position: fixed;
+      z-index: 3;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      padding: 100px 30px 30px 30px;
+      transition: left 0.3s ease 0s;
+      overflow: auto;
+   }
+
+   .menu__body._active {
+      left: 0;
+   }
+
+   .menu__body::before {
+      content: "";
+      position: fixed;
+      z-index: 5;
+      width: 100%;
+      top: 0;
+      left: 0;
+      height: 70px;
+      background-color: #fff;
+   }
+
+   .menu__list>li {
+      flex-wrap: wrap;
+      margin: 0px 0px 30px 0px;
+   }
+
+   .menu__list>li:last-child {
+      margin-bottom: 0;
+   }
+
+   .menu__link {
+      font-size: 24px;
+      color: #fff;
+   }
+
+   .hero {
+      padding: 85px 0;
+
+      &_title {
+         font-size: 32px;
+      }
+
+      &_image {}
+
+      &_btns {
+         flex-wrap: wrap;
+      }
+
+      &_button {
+         margin: 0px 0px 20px 0px;
+      }
+   }
+
+   .cards {
+      &_item {
+         padding: 32px 15px 17px;
+      }
+
+      &_column {
+         flex: 0 1 100%;
+      }
+
+      &_num {
+         font-size: 20px;
+      }
+   }
+}
+
+@media (max-width: 480px) {
+   .hero {
+      padding: 50px 0;
+
+      &_wrapper {
+         flex-wrap: wrap;
+         justify-content: center;
+      }
+
+      &_column {
+         margin: 25px 0px 0px 0px;
+         order: 1;
+         flex: 1 1 100%;
+         text-align: center;
+      }
+
+      &_column-image {
+         order: 0;
+         flex: 1 1 100%;
+      }
+
+      &_btns {
+         justify-content: center;
+      }
+
+      &_button {
+         margin: 0px 25px 0px 0px;
+
+      }
+   }
+
+   .cards {
+      &_title {
+         font-size: 24px;
+      }
+
+      &_num {
+         font-size: 18px;
+         width: 37px;
+         height: 37px;
+      }
    }
 }

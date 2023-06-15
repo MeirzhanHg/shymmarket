@@ -32,11 +32,15 @@ h6 {
     font-size: inherit;
 }
 
+button {
+    cursor: pointer;
+}
+
 html,
 body {
     height: 100%;
     line-height: 1;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     font-family: 'Proto Mono', sans-serif;
 }

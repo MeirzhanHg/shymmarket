@@ -1,6 +1,18 @@
 .header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 10;
+   background-color: #fff;
 
-   &_lang {}
+   &_lang {
+      margin: 0px 20px 0px 0px;
+   }
+
+   &_wrapper {
+      display: flex;
+   }
 
    &__container {
       display: flex;

@@ -1,28 +1,54 @@
-.main {}
-
 .hero {
-
+   padding: 108px 0;
    background: linear-gradient(106.92deg, #FEAA56 26.85%, #FF952C 81.36%);
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
    &_wrapper {
       display: flex;
       align-items: center;
-      justify-content: space-between;
    }
 
-   &_column {}
+   &_column {
+      flex: 0 1 50%;
+   }
+
+   &_column-image {
+      flex: 0 1 50%;
+      display: flex;
+      justify-content: flex-end;
+   }
+
+   &_image {
+      position: relative;
+      z-index: 2;
+
+      img {
+         border-radius: 50%;
+      }
+   }
 
    &_title {
       font-weight: 700;
       font-size: 64px;
       line-height: 135.52%;
       color: #fff;
+      margin: 0px 0px 38px 0px;
+
    }
 
-   &_button {}
+   &_btns {
+      display: flex;
+      align-items: center;
+   }
+
+   &_button {
+      padding: 17px 25px;
+      font-weight: 700;
+      color: #6E7E8B;
+      margin: 0px 25px 0px 0px;
+   }
+
+   &_label {
+      color: #fff;
+   }
 }
-
-.container {}
-
-.btn {}

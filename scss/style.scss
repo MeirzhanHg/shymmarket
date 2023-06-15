@@ -1,18 +1,47 @@
 @import 'blocks/reset';
 @import 'blocks/header';
 @import 'blocks/main';
+@import 'blocks/cards';
 
-.wrapper {}
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+}
 
+main {
+   margin: 88px 0px 0px 0px;
+   flex: 1 1 auto;
+}
 
 .container {
    max-width: 1320px;
    margin: 0 auto;
+   padding: 0 15px;
 }
 
 body {
    font-family: 'Inter', sans-serif;
 }
 
+body._lock {
+   overflow: hidden;
+}
+
+img {
+   max-width: 100%;
+}
+
+.btn {
+   background: #FFFFFF;
+   border-radius: 15px;
+   transition: all 0.4s ease 0s;
+
+   &:hover {
+      color: #fff;
+      background-color: #FF952C;
+   }
+}
 
 @import 'blocks/adaptive';
