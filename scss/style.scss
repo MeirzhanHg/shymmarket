@@ -1,0 +1,18 @@
+@import 'blocks/reset';
+@import 'blocks/header';
+@import 'blocks/main';
+
+.wrapper {}
+
+
+.container {
+   max-width: 1320px;
+   margin: 0 auto;
+}
+
+body {
+   font-family: 'Inter', sans-serif;
+}
+
+
+@import 'blocks/adaptive';

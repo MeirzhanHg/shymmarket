@@ -1,0 +1,10 @@
+@media (min-width: 767px) {
+   .menu__list {
+      display: flex;
+      align-items: center;
+   }
+
+   .menu__list>li {
+      padding: 10px 0px;
+   }
+}
