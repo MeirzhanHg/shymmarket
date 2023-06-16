@@ -30,7 +30,22 @@
             <div class="header__container">
                <div class="header__menu menu">
                   <a href="index.html" class="header__logo">
-                     <img src="img/logo.svg" alt="logo">
+                     <!-- <img src="img/logo.svg" alt="logo">
+                      -->
+
+                     <svg width="165" height="48" viewBox="0 0 165 48" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="165" height="48" fill="url(#pattern0)" />
+                        <defs>
+                           <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                              <use xlink:href="#image0_279_6"
+                                 transform="matrix(0.00312805 0 0 0.0107527 -0.00361681 0)" />
+                           </pattern>
+                           <image id="image0_279_6" width="322" height="93"
+                              xlink:href="data:image/png;base64,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" />
+                        </defs>
+                     </svg>
+
                   </a>
                   <nav class="menu__body">
                      <ul class="menu__list">
@@ -196,13 +211,78 @@
                </div>
             </div>
          </section>
+
+         <section class="howwork">
+            <div class="container">
+               <h2 class="howwork_title">Как это работает?</h2>
+               <div class='howwork_slider' style="position:relative;">
+                  <button class="main-slider-btn main-prev-btn">
+                     <!-- <img src="img/left.svg" alt="left"> -->
+                     <svg width="21" height="37" viewBox="0 0 21 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M0.732233 16.7322C-0.244078 17.7085 -0.244078 19.2915 0.732233 20.2678L16.6421 36.1777C17.6184 37.154 19.2014 37.154 20.1777 36.1777C21.154 35.2014 21.154 33.6184 20.1777 32.6421L6.03553 18.5L20.1777 4.35786C21.154 3.38155 21.154 1.79864 20.1777 0.82233C19.2014 -0.15398 17.6184 -0.15398 16.6421 0.82233L0.732233 16.7322ZM5.5 16H2.5V21H5.5V16Z"
+                           fill="#596371" />
+                     </svg>
+                  </button>
+                  <button class="main-slider-btn main-next-btn">
+                     <!-- <img src="img/right.svg" alt="right"> -->
+                     <svg width="22" height="37" viewBox="0 0 22 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M20.7678 20.2678C21.7441 19.2915 21.7441 17.7085 20.7678 16.7322L4.85786 0.82233C3.88155 -0.15398 2.29864 -0.15398 1.32233 0.82233C0.34602 1.79864 0.34602 3.38155 1.32233 4.35786L15.4645 18.5L1.32233 32.6421C0.34602 33.6184 0.34602 35.2014 1.32233 36.1777C2.29864 37.154 3.88155 37.154 4.85786 36.1777L20.7678 20.2678ZM16 21H19V16H16V21Z"
+                           fill="#596371" />
+                     </svg>
+
+                  </button>
+                  <div class='howwork_slider_item'>
+                     <div class="howwork_wrapper">
+                        <div class='howwork_image col-sm-5'>
+                           <div class='howwork_block'>
+                              <img src='img/slide1.jpg' alt>
+                           </div>
+                        </div>
+                        <div class="howwork_content col-sm-5">
+                           <p class='howwork_heading'>Установите приложение</p>
+                           <p class=howwork_text>Сперва установите приложение, и зарегистрируйтесь </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class='howwork_slider_item'>
+                     <div class="howwork_wrapper">
+                        <div class='howwork_image col-sm-5'>
+                           <div class='howwork_block'>
+                              <img src='img/slide2.jpg' alt>
+                           </div>
+                        </div>
+                        <div class="howwork_content col-sm-5">
+                           <p class='howwork_heading'>Выбор рынок</p>
+                           <p class=howwork_text>Выберите рынок, с которой вы хотите купить товары</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class='howwork_slider_item'>
+                     <div class="howwork_wrapper">
+                        <div class='howwork_image col-sm-5'>
+                           <div class='howwork_block'>
+                              <img src='img/slide3.jpg' alt>
+                           </div>
+                        </div>
+                        <div class="howwork_content col-sm-5">
+                           <p class='howwork_heading'>Выберите товар</p>
+                           <p class=howwork_text>Выберите товар, и свяжитесь с продавцом </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
       </main>
+
+
+
 
 
       <footer class="footer">
          <div class="container">
-
-
          </div>
       </footer>
    </div>

@@ -1,0 +1,83 @@
+.howwork {
+   padding: 60px 0 65px;
+
+   &_title {
+      font-weight: 700;
+      font-size: 32px;
+      color: #596371;
+      margin: 0px 0px 20px 50px;
+   }
+
+   &_slider {}
+
+   &_slider_item {
+      margin: 0 50px;
+   }
+
+   &_wrapper {
+      display: flex;
+      align-items: center;
+   }
+
+   &_image {
+      margin: 0px 15px 0px 0px;
+
+   }
+
+   &_block {}
+
+   &_content {}
+
+   &_heading {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: calc(38/32*100%);
+      color: #596371;
+      margin: 0px 0px 15px 0px;
+   }
+
+   &_text {
+      font-weight: 300;
+      font-size: 24px;
+      line-height: calc(30/24*100%);
+      color: #596371;
+   }
+}
+
+.main-slider-btn {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   border: none;
+   padding: 0;
+   z-index: 10;
+   background-color: transparent;
+}
+
+.main-prev-btn {
+   left: 0;
+}
+
+.main-next-btn {
+   right: 0;
+}
+
+.slideInLeft {
+   animation-name: slideInLeft;
+}
+
+.animated {
+   animation-duration: 1s;
+   animation-fill-mode: both;
+}
+
+@keyframes slideInLeft {
+   0% {
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+   }
+
+   100% {
+      transform: translate3d(0, 0, 0);
+   }
+}
