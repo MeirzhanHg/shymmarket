@@ -186,6 +186,10 @@
          margin: 0px 0px 10px 0px;
       }
    }
+
+   .accordion-heading {
+      font-size: 24px;
+   }
 }
 
 @media (max-width: 570px) {
@@ -422,6 +426,19 @@
          font-size: 26px;
          margin: 0px 0px 10px 0px;
       }
+   }
+
+   .often-questions {
+      padding: 40px 0;
+   }
+
+   .p-heading {
+      font-size: 26px;
+      margin: 0px 0px 35px 0px;
+   }
+
+   .accordion-heading {
+      font-size: 20px;
    }
 }
 

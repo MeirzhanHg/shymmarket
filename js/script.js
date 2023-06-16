@@ -92,3 +92,37 @@ const sliders = (slides, dir, prev, next) => {
 }
 
 sliders('.howwork_slider_item', 'horizontal', '.main-prev-btn', '.main-next-btn')
+
+// Аккордион
+
+const accordion = (triggersSelector) => {
+   const btns = document.querySelectorAll(triggersSelector)
+
+   btns.forEach(btn => {
+      btn.addEventListener('click', function () {
+
+         btns.forEach(btn => {
+            if (!this.classList.contains('active-style')) {
+
+               btn.classList.remove('active-style')
+
+               btn.nextElementSibling.classList.remove('active-content')
+
+               btn.nextElementSibling.style.maxHeight = 0 + 'px'
+            }
+
+         })
+
+         this.classList.toggle('active-style')
+         this.nextElementSibling.classList.toggle('active-content')
+
+         if (this.classList.contains('active-style')) {
+            this.nextElementSibling.style.maxHeight = this.nextElementSibling.scrollHeight + 80 + 'px'
+         } else {
+            this.nextElementSibling.style.maxHeight = '0px'
+         }
+      })
+   })
+}
+
+accordion('.accordion-heading')
