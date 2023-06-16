@@ -349,6 +349,43 @@ body {
     transform: translate3d(0, 0, 0);
   }
 }
+.app {
+  background-color: #EBEBEB;
+  padding-top: 66px;
+}
+.app_wrapper {
+  display: flex;
+  align-items: center;
+}
+.app_column {
+  flex: 0 1 50%;
+}
+.app_info {
+  color: #596371;
+}
+.app_title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 133.3333333333%;
+  margin: 0px 0px 20px 0px;
+}
+.app_subtitle {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 131.8181818182%;
+  margin: 0px 0px 65px 0px;
+}
+.app_btns {
+  display: flex;
+}
+.app_googleplay {
+  margin: 0px 40px 0px 0px;
+}
+.app_image {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .wrapper {
   min-height: 100%;
   overflow: hidden;
@@ -417,6 +454,12 @@ img {
   .howwork_slider_item {
     margin: 0 35px;
   }
+  .app_info {
+    margin: 0px 50px 0px 0px;
+  }
+  .app_googleplay {
+    margin: 0px 20px 0px 0px;
+  }
 }
 @media (max-width: 992px) {
   .hero_title {
@@ -457,6 +500,15 @@ img {
   .howwork_text {
     font-size: 18px;
   }
+  .app_info {
+    margin: 0px 30px 0px 0px;
+  }
+  .app_title {
+    font-size: 30px;
+  }
+  .app_subtitle {
+    font-size: 18px;
+  }
 }
 @media (max-width: 768px) {
   .hero_title {
@@ -490,6 +542,10 @@ img {
   }
   .howwork .col-sm-5 {
     flex: 1 1 100%;
+  }
+  .app_title {
+    font-size: 26px;
+    margin: 0px 0px 10px 0px;
   }
 }
 @media (max-width: 570px) {
@@ -637,6 +693,38 @@ img {
   }
   .howwork .main-next-btn {
     right: -5px;
+  }
+  .app {
+    padding-top: 40px;
+  }
+  .app_wrapper {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  .app_title {
+    font-size: 22px;
+  }
+  .app_subtitle {
+    margin: 0px 0px 22px 0px;
+  }
+  .app_column {
+    flex: 1 1 100%;
+  }
+  .app_info {
+    margin: 0;
+  }
+  .app_btns {
+    justify-content: center;
+  }
+  .app_image {
+    flex: 0 1 75%;
+    margin: 30px 0px 0px 0px;
+    justify-content: center;
+  }
+  .app_title {
+    font-size: 26px;
+    margin: 0px 0px 10px 0px;
   }
 }
 @media (max-width: 480px) {

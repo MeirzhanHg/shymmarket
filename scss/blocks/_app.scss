@@ -1,0 +1,46 @@
+.app {
+   background-color: #EBEBEB;
+   padding-top: 66px;
+
+   &_wrapper {
+      display: flex;
+      align-items: center;
+   }
+
+   &_column {
+      flex: 0 1 50%;
+   }
+
+   &_info {
+      color: #596371;
+   }
+
+   &_title {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: calc(48/36*100%);
+      margin: 0px 0px 20px 0px;
+   }
+
+   &_subtitle {
+      font-weight: 300;
+      font-size: 22px;
+      line-height: calc(29/22*100%);
+      margin: 0px 0px 65px 0px;
+   }
+
+   &_btns {
+      display: flex;
+   }
+
+   &_googleplay {
+      margin: 0px 40px 0px 0px;
+   }
+
+   &_button {}
+
+   &_image {
+      display: flex;
+      justify-content: flex-end;
+   }
+}
