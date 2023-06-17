@@ -2,7 +2,7 @@
    padding: 40px 0 60px;
    background-color: #EBEBEB;
 
-   &_ietms {
+   &_items {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -12,13 +12,10 @@
       margin: 0px 10px 20px;
    }
 
-   &_item {}
-
    &_title {
       font-weight: 700;
       font-size: 20px;
       line-height: calc(24/20*100%);
-
       color: #000000;
       margin: 0px 0px 20px 0px;
    }
@@ -35,16 +32,9 @@
    &_text {
       font-weight: 300;
       font-size: 20px;
-
       line-height: calc(24/20*100%);
       margin: 0px 0px 18px 0px;
       color: #000000;
-
-   }
-
-   &_btns {
-      // display: flex;
-      // flex-wrap: wrap;
    }
 
    &_button {

@@ -58,6 +58,7 @@ body {
 }
 .header_wrapper {
   display: flex;
+  align-items: center;
 }
 .header__container {
   display: flex;
@@ -77,6 +78,7 @@ body {
   position: relative;
   margin: 0px 0px 0px 20px;
 }
+
 .hero {
   padding: 108px 0;
   background: linear-gradient(106.92deg, #FEAA56 26.85%, #FF952C 81.36%);
@@ -495,7 +497,7 @@ body {
   padding: 40px 0 60px;
   background-color: #EBEBEB;
 }
-.footer_ietms {
+.footer_items {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -537,6 +539,57 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+}
+
+.select {
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 600;
+  color: #444;
+  line-height: 1.3;
+  padding: 0.6em 1.4em 0.5em 0.8em;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  border: 1px solid #ebebeb;
+  box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
+  border-radius: 0.5em;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("../img/down.svg");
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  background-size: 0.65em auto, 100%;
+}
+
+.select::-ms-expand {
+  display: none;
+}
+
+.select:hover {
+  border-color: #888;
+}
+
+.select:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 1px 3px rgba(59, 153, 252, 0.7);
+  box-shadow: 0 0 0 3px -moz-mac-focusring;
+  color: #222;
+  outline: none;
+}
+
+.select option {
+  font-weight: normal;
+}
+
+*[dir=rtl] .select,
+:root:lang(ar) .select,
+:root:lang(iw) .select {
+  background-position: left 0.7em top 50%, 0 0;
+  padding: 0.6em 0.8em 0.5em 1.4em;
 }
 
 main {
@@ -713,6 +766,7 @@ img {
     min-height: 70px;
   }
   .menu__icon {
+    margin: 0px 0px 0px 20px;
     display: block;
     position: relative;
     width: 30px;

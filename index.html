@@ -46,19 +46,22 @@
                   <nav class="menu__body">
                      <ul class="menu__list">
                         <li>
-                           <a data-goto=".section__page_1" href="#" class="menu__link">О нас</a>
+                           <a data-goto=".section__page_1" href="#" class="lng-about menu__link">О нас</a>
                         </li>
                         <li>
-                           <a data-goto=".questions" href="#" class="menu__link">Контакты</a>
+                           <a data-goto=".questions" href="#" class="lng-contact menu__link">Контакты</a>
                         </li>
                         <li>
-                           <a data-goto=".section__page_3" href="#" class="menu__link">FAQ</a>
+                           <a data-goto=".section__page_3" href="#" class="lng-menu menu__link">FAQ</a>
                         </li>
                      </ul>
                   </nav>
                </div>
                <div class="header_wrapper">
-                  <div class="header_lang">Kz</div>
+                  <select class="select">
+                     <option value="ru" selected>Рус</option>
+                     <option value="kz">Каз</option>
+                  </select>
                   <div class="menu__icon">
                      <span></span>
                   </div>
@@ -71,11 +74,12 @@
             <div class="container">
                <div class="hero_wrapper">
                   <div class="hero_column">
-                     <h1 class="hero_title">Весь рынок Шымкента
+                     <h1 class="lng-title hero_title">Весь рынок Шымкента
                         найдете здесь</h1>
                      <div class="hero_btns">
-                        <button class="hero_button btn">Посмотреть каталог</button>
-                        <div class="hero_label">Бесплатно</div>
+                        <a data-goto=".category" href="#" class="lng-catalog hero_button btn">Посмотреть каталог
+                        </a>
+                        <div class="lng-free hero_label">Бесплатно</div>
                      </div>
                   </div>
                   <div class="hero_column-image">
@@ -93,8 +97,8 @@
                   <div class="cards_column">
                      <div class="cards_item">
                         <div class="cards_num">1</div>
-                        <div class="cards_title">Это выгодно</div>
-                        <div class="cards_descr">
+                        <div class="lng-card1 cards_title">Это выгодно</div>
+                        <div class="lng-card1-descr cards_descr">
                            Не выходя из дома, можно смотреть что твориться с рынком
                         </div>
                      </div>
@@ -102,19 +106,17 @@
                   <div class="cards_column">
                      <div class="cards_item">
                         <div class="cards_num">2</div>
-                        <div class="cards_title">Договор</div>
-                        <div class="cards_descr">
-                           Можно договориться
-                           с клиентом, не выходя
-                           из дома
+                        <div class="lng-card2 cards_title">Договор</div>
+                        <div class="lng-card2-descr cards_descr">
+                           Можно договориться с клиентом, не выходя из дома
                         </div>
                      </div>
                   </div>
                   <div class="cards_column">
                      <div class="cards_item">
                         <div class="cards_num">3</div>
-                        <div class="cards_title">Все рынки Шымкента</div>
-                        <div class="cards_descr">
+                        <div class="lng-card3 cards_title">Все рынки Шымкента</div>
+                        <div class="lng-card3-descr cards_descr">
                            по категориям
                         </div>
                      </div>
@@ -122,8 +124,8 @@
                   <div class="cards_column">
                      <div class="cards_item">
                         <div class="cards_num">4</div>
-                        <div class="cards_title">Бесплатная регистрация </div>
-                        <div class="cards_descr">
+                        <div class="lng-card4 cards_title">Бесплатная регистрация</div>
+                        <div class="lng-card4-descr cards_descr">
                            для продавцов
                         </div>
                      </div>
@@ -210,10 +212,9 @@
 
          <section class="howwork">
             <div class="container">
-               <h2 class="howwork_title">Как это работает?</h2>
+               <h2 class="lng-howwork howwork_title">Как это работает?</h2>
                <div class='howwork_slider' style="position:relative;">
                   <button class="main-slider-btn main-prev-btn">
-                     <!-- <img src="img/left.svg" alt="left"> -->
                      <svg width="21" height="37" viewBox="0 0 21 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                            d="M0.732233 16.7322C-0.244078 17.7085 -0.244078 19.2915 0.732233 20.2678L16.6421 36.1777C17.6184 37.154 19.2014 37.154 20.1777 36.1777C21.154 35.2014 21.154 33.6184 20.1777 32.6421L6.03553 18.5L20.1777 4.35786C21.154 3.38155 21.154 1.79864 20.1777 0.82233C19.2014 -0.15398 17.6184 -0.15398 16.6421 0.82233L0.732233 16.7322ZM5.5 16H2.5V21H5.5V16Z"
@@ -221,7 +222,6 @@
                      </svg>
                   </button>
                   <button class="main-slider-btn main-next-btn">
-                     <!-- <img src="img/right.svg" alt="right"> -->
                      <svg width="22" height="37" viewBox="0 0 22 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                            d="M20.7678 20.2678C21.7441 19.2915 21.7441 17.7085 20.7678 16.7322L4.85786 0.82233C3.88155 -0.15398 2.29864 -0.15398 1.32233 0.82233C0.34602 1.79864 0.34602 3.38155 1.32233 4.35786L15.4645 18.5L1.32233 32.6421C0.34602 33.6184 0.34602 35.2014 1.32233 36.1777C2.29864 37.154 3.88155 37.154 4.85786 36.1777L20.7678 20.2678ZM16 21H19V16H16V21Z"
@@ -237,8 +237,9 @@
                            </div>
                         </div>
                         <div class="howwork_content col-sm-5">
-                           <p class='howwork_heading'>Установите приложение</p>
-                           <p class=howwork_text>Сперва установите приложение, и зарегистрируйтесь </p>
+                           <p class="lng-slide1 howwork_heading">Установите приложение</p>
+                           <p class='lng-slide1-descr howwork_text'>Сперва установите приложение, и зарегистрируйтесь
+                           </p>
                         </div>
                      </div>
                   </div>
@@ -250,8 +251,9 @@
                            </div>
                         </div>
                         <div class="howwork_content col-sm-5">
-                           <p class='howwork_heading'>Выбор рынок</p>
-                           <p class=howwork_text>Выберите рынок, с которой вы хотите купить товары</p>
+                           <p class='lng-slide2 howwork_heading'>Выбор рынок</p>
+                           <p class='lng-slide2-descr howwork_text'>Выберите рынок, с которой вы хотите купить товары
+                           </p>
                         </div>
                      </div>
                   </div>
@@ -263,8 +265,8 @@
                            </div>
                         </div>
                         <div class="howwork_content col-sm-5">
-                           <p class='howwork_heading'>Выберите товар</p>
-                           <p class=howwork_text>Выберите товар, и свяжитесь с продавцом </p>
+                           <p class='lng-slide3 howwork_heading'>Выберите товар</p>
+                           <p class='lng-slide3-descr howwork_text'>Выберите товар, и свяжитесь с продавцом</p>
                         </div>
                      </div>
                   </div>
@@ -276,8 +278,8 @@
             <div class="container">
                <div class="app_wrapper">
                   <div class="app_info app_column">
-                     <h2 class="app_title">Скачайте приложение, чтобы начать заниматься</h2>
-                     <div class="app_subtitle">Установите и убедитесь сами.</div>
+                     <h2 class="lng-app app_title">Скачайте приложение, чтобы начать заниматься</h2>
+                     <div class="lng-app-subtitle app_subtitle">Установите и убедитесь сами.</div>
                      <div class="app_btns">
                         <a href="#" class="app_googleplay">
                            <img src="img/googleplay.jpg" alt="googleplay">
@@ -296,43 +298,41 @@
 
          <section class=often-questions id=often-questions>
             <div class=container>
-               <p class=p-heading>Часто задаваемые вопросы</p>
+               <p class='lng-often p-heading'>Часто задаваемые вопросы</p>
                <div id=accordion>
                   <p class="accordion-heading">
-                     <span>Что такое SHYM MARKET?</span>
+                     <span class="lng-question1">Что такое SHYM MARKET?</span>
                      <img src="img/down.svg" alt="down">
                   </p>
                   <div class='accordion-block'>
-                     <p>
+                     <p class="lng-answer1">
                         Shym Market - это уникальное приложение, которое представляет вам рынок города Шымкента в
-                        мобильном
-                        устройстве. Откройте для себя бесконечные возможности покупок и отличные предложения прямо у вас
-                        в
-                        кармане. Это одно приложение, объединяющее все категории товаров и услуг, доступных на рынке
-                     </p>
+                        мобильном устройстве. Откройте для себя бесконечные возможности покупок и отличные предложения
+                        прямо у вас в кармане. Это одно приложение, объединяющее все категории товаров и услуг,
+                        доступных на рынке </p>
                   </div>
-                  <p class="accordion-heading"><span>Как посмотреть категория рынки</span>
+                  <p class="accordion-heading"><span class="lng-question2">Как посмотреть категория рынки</span>
                      <img src="img/down.svg" alt="down">
                   </p>
                   <div class='accordion-block'>
-                     <p>
+                     <p class="lng-answer2">
                         Заходим в программу и нажимаем кнопку меню в нижнем колонтитуле
                      </p>
                   </div>
-                  <p class="accordion-heading"><span>Могу ли я продавать свой товар </span>
+                  <p class="accordion-heading"><span class="lng-question3">Могу ли я продавать свой товар</span>
                      <img src="img/down.svg" alt="down">
                   </p>
                   <div class='accordion-block'>
-                     <p>
+                     <p class="lng-answer3">
                         Да, если вы работаете только на доступных рынках!
                      </p>
                   </div>
-                  <p class="accordion-heading"><span>Как я могу связаться продавцом</span>
+                  <p class="accordion-heading"><span class="lng-question4">Как я могу связаться продавцом</span>
                      <img src="img/down.svg" alt="down">
                   </p>
                   <div class='accordion-block'>
-                     <p>
-                        Выбрав нужный вам товар, нажимаете кнопку «Связаться» / «Байланысу»
+                     <p class="lng-answer4">
+                        Выбрав нужный вам товар, нажимаете кнопку «Связаться»
                      </p>
                   </div>
                </div>
@@ -342,16 +342,16 @@
          <section class="questions">
             <div class="container">
                <div class="questions_content">
-                  <h2 class="questions_title">Остались вопросы?</h2>
-                  <div class="questions_subtitle">Пишите нам в мессенджеры, мы поможем</div>
+                  <h2 class="lng-questions questions_title">Остались вопросы?</h2>
+                  <div class="lng-write questions_subtitle">Пишите нам в мессенджеры, мы поможем</div>
                   <div class="questions_socials">
                      <button class="questions_button">
                         <div class="questions_image"><img src="img/whatsapp.svg" alt="Whatsapp"></div>
-                        <div class="questions_social">Whatsapp</div>
+                        <a href="https://wa.me/87475058238" target="_blank" class="questions_social">Whatsapp</a>
                      </button>
                      <button class="questions_button">
                         <div class="questions_image"><img src="img/telegram.svg" alt="Telegram"></div>
-                        <div class="questions_social">Telegram</div>
+                        <a href="https://t.me/nursszw" target="_blank" class="questions_social">Telegram</a>
                      </button>
                   </div>
                </div>
@@ -364,26 +364,26 @@
 
       <footer class="footer">
          <div class="container">
-            <div class="footer_ietms">
+            <div class="footer_items">
                <div class="footer_column">
                   <div class="footer_item">
-                     <div class="footer_title">Контакты</div>
-                     <a class="footer_phone" href="#">+7 (705) 777 27 76</a>
+                     <div class="lng-f-contact footer_title">Контакты</div>
+                     <a class="footer_phone" href="tel:+77769954290">+7 (776) 995 42 90</a>
                      <div class="footer_text">Шымкент, Толе би 9/9</div>
                   </div>
                </div>
                <div class="footer_column">
                   <div class="footer_item">
-                     <div class="footer_title">Сотрудничество</div>
-                     <div class="footer_text">Стать нашим партнером</div>
+                     <div class="lng-cooperation footer_title">Сотрудничество</div>
+                     <div class="lng-partner footer_text">Стать нашим партнером</div>
                   </div>
                </div>
                <div class="footer_column">
                   <div class="footer_item">
-                     <div class="footer_title">Разное</div>
-                     <div class="footer_text">Публичная оферта</div>
-                     <div class="footer_text">Правила пользования</div>
-                     <div class="footer_text">Политика конфиденциальности</div>
+                     <div class="lng-raznoe footer_title">Разное</div>
+                     <div class="lng-offer footer_text">Публичная оферта</div>
+                     <div class="lng-rules footer_text">Правила пользования</div>
+                     <div class="lng-political footer_text">Политика конфиденциальности</div>
                   </div>
                </div>
                <div class="footer_column">
@@ -402,6 +402,7 @@
          </div>
       </footer>
    </div>
+   <script src="js/lang.js"></script>
    <script src="js/script.js"></script>
 </body>
 

@@ -9,12 +9,6 @@
    }
 }
 
-@media (min-width: 570px) {
-   // .col-sm-5 {
-   //    flex: 0 1 41%;
-   // }
-}
-
 @media (max-width : 1200px) {
    .cards {
       &_items {
@@ -214,6 +208,7 @@
    }
 
    .menu__icon {
+      margin: 0px 0px 0px 20px;
       display: block;
       position: relative;
       width: 30px;
@@ -313,8 +308,6 @@
       &_title {
          font-size: 32px;
       }
-
-      &_image {}
 
       &_btns {
          flex-wrap: wrap;

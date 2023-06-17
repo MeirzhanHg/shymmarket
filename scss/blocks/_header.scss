@@ -12,6 +12,7 @@
 
    &_wrapper {
       display: flex;
+      align-items: center;
    }
 
    &__container {
@@ -28,16 +29,10 @@
 
    &__logo {
       margin: 0px 30px 0px 0px;
-
    }
 }
 
 .menu {
-
-   &__icon {}
-
-   &__body {}
-
    &__list {
 
       >li {
@@ -45,6 +40,4 @@
          margin: 0px 0px 0px 20px;
       }
    }
-
-   &__link {}
 }
