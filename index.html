@@ -85,6 +85,7 @@
             </div>
          </div>
       </header>
+
       <main class="main">
          <section class="hero">
             <div class="container">
@@ -153,72 +154,72 @@
             <div class="container">
                <h2 class="category_title">Категория</h2>
                <div class="category_top">
-                  <div class="category_bg category_verhni">
+                  <a href="#" data-goto=".app" class="category_bg category_verhni">
                      <div class="category_content">
                         <div class="lng-bazar1 category_name">Верхний рынок</div>
                         <div class="category_address">Адрес: Толе би, 9/9</div>
                      </div>
-                  </div>
+                  </a>
                </div>
                <div class="category_items">
                   <div class="category_column">
                      <div class="category_item">
-                        <div class="category_bg category_bekjan">
+                        <a href="#" data-goto=".app" class="category_bg category_bekjan">
                            <div class="category_info">
                               <div class="lng-bazar2 category_label">Бекжан рынок</div>
                               <div class="category_address2">Адрес: Тамерлановское шоссе, 129</div>
                            </div>
-                        </div>
+                        </a>
                      </div>
                   </div>
                   <div class="category_column">
                      <div class="category_item">
-                        <div class="category_bg category_avtonur">
+                        <a href="#" data-goto=".app" class="category_bg category_avtonur">
                            <div class="category_info">
                               <div class="lng-bazar3 category_label">Автонур рынок</div>
                               <div class="category_address2">Адрес: ​Тамерлановское шоссе, 62/7</div>
                            </div>
-                        </div>
+                        </a>
                      </div>
                   </div>
                   <div class="category_column">
                      <div class="category_item">
-                        <div class="category_bg category_alash">
+                        <a href="#" data-goto=".app" class="category_bg category_alash">
                            <div class="category_info">
                               <div class="lng-bazar4 category_label">Алаш рынок</div>
                               <div class="category_address2">Адрес: ​​Тамерлановское шоссе, 198/14</div>
                            </div>
-                        </div>
+                        </a>
                      </div>
                   </div>
                   <div class="category_column">
                      <div class="category_item">
-                        <div class="category_bg category_samal">
+                        <a href="#" data-goto=".app" class="category_bg category_samal">
                            <div class="category_info">
                               <div class="lng-bazar5 category_label">Самал рынок</div>
                               <div class="category_address2">Адрес: Толе би, 9/9</div>
                            </div>
-                        </div>
+                        </a>
                      </div>
                   </div>
                   <div class="category_column">
                      <div class="category_item">
-                        <div class="category_bg category_koktem">
+                        <a href="#" data-goto=".app" class="category_bg category_koktem">
                            <div class="category_info">
                               <div class="lng-bazar6 category_label">Көктем рынок</div>
                               <div class="category_address2">Адрес: ​Тамерлановское шоссе, 62/7</div>
                            </div>
-                        </div>
+                        </a>
                      </div>
                   </div>
                   <div class="category_column">
                      <div class="category_item">
-                        <div class="category_bg category_aina">
+                        <a href="#" data-goto=".app" class="category_bg category_aina">
                            <div class="category_info">
                               <div class="lng-bazar7 category_label">Айна рынок</div>
                               <div class="category_address2">Адрес: ​​Жибек жолы, 403/5</div>
                            </div>
-                        </div>
+                        </a>
                      </div>
                   </div>
                </div>
@@ -296,12 +297,12 @@
                      <h2 class="lng-app app_title">Скачайте приложение, чтобы начать заниматься</h2>
                      <div class="lng-app-subtitle app_subtitle">Установите и убедитесь сами.</div>
                      <div class="app_btns">
-                        <a href="#" class="app_googleplay">
+                        <button data-modal href="#" class="app_googleplay">
                            <img src="img/googleplay.jpg" alt="googleplay">
-                        </a>
-                        <a href="#" class="app_button">
+                        </button>
+                        <button data-modal href="#" class="app_button">
                            <img src="img/appstore.jpg" alt="appstore">
-                        </a>
+                        </button>
                      </div>
                   </div>
                   <div class="app_image app_column">
@@ -373,9 +374,7 @@
             </div>
             <img class="questions_image-bg" src="img/questions_bg.png" alt="">
          </section>
-
       </main>
-
 
       <footer class="footer">
          <div class="container">
@@ -404,19 +403,31 @@
                <div class="footer_column">
                   <div class="footer_item">
                      <div class="footer_btns">
-                        <a href="#" class="footer_button">
+                        <button data-modal href="#" class="footer_button">
                            <img src="img/googleplay.jpg" alt="googleplay">
-                        </a>
-                        <a href="#" class="footer_button">
+                        </button>
+                        <button data-modal href="#" class="footer_button">
                            <img src="img/appstore.jpg" alt="appstore">
-                        </a>
+                        </button>
                      </div>
                   </div>
                </div>
             </div>
          </div>
       </footer>
+
+      <div class="modal">
+         <div class="modal_dialog">
+            <div class="modal_content">
+               <div data-close="" class="modal_close">×</div>
+               <div class="lng-modal modal_text">
+                  В разработке Скоро будет готова
+               </div>
+            </div>
+         </div>
+      </div>
    </div>
+
    <script src="js/lang.js"></script>
    <script src="js/script.js"></script>
 </body>

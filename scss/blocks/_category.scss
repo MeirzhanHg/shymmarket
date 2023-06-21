@@ -12,6 +12,7 @@
    }
 
    &_bg {
+      display: block;
       padding: 173px 0 35px 35px;
       position: relative;
       z-index: 2;
@@ -35,6 +36,7 @@
    }
 
    &_verhni {
+      display: block;
       padding: 140px 0 35px 35px;
 
       background-image: url('../img/verhni.jpg');
@@ -56,6 +58,7 @@
    }
 
    &_item {
+      display: block;
       height: 100%;
    }
 

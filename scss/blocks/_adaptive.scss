@@ -191,6 +191,7 @@
 }
 
 @media (max-width: 570px) {
+
    main {
       margin: 70px 0px 0px 0px;
    }
@@ -468,6 +469,22 @@
       &_social {
          font-size: 24px;
       }
+   }
+
+   .modal_dialog {
+      max-width: 80%;
+   }
+
+   .modal_content {
+      padding: 25px;
+   }
+
+   .modal_text {
+      font-size: 20px;
+   }
+
+   .modal_close {
+      font-size: 26px;
    }
 }
 
