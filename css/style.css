@@ -309,6 +309,12 @@ body {
 .howwork_image {
   margin: 0px 15px 0px 0px;
 }
+.howwork_block img {
+  width: 650px;
+  height: 400px;
+  border-radius: 15px;
+  object-fit: cover;
+}
 .howwork_heading {
   font-weight: 700;
   font-size: 32px;
@@ -342,7 +348,7 @@ body {
 }
 
 .slideInLeft {
-  animation-name: slideInLeft;
+  animation: slideInLeft 300ms;
 }
 
 .animated {
@@ -352,10 +358,12 @@ body {
 
 @keyframes slideInLeft {
   0% {
-    transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+    transform: translate3d(0, 0, -100%);
     visibility: visible;
   }
   100% {
+    opacity: 1;
     transform: translate3d(0, 0, 0);
   }
 }
@@ -1043,6 +1051,9 @@ img {
   .modal_close {
     font-size: 26px;
   }
+  .howwork_block img {
+    height: 300px;
+  }
 }
 @media (max-width: 480px) {
   .header__logo > svg {
@@ -1085,5 +1096,8 @@ img {
   }
   .footer {
     padding: 40px 0 20px;
+  }
+  .howwork_block img {
+    height: 200px;
   }
 }

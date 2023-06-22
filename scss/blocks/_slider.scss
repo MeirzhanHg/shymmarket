@@ -19,7 +19,15 @@
 
    &_image {
       margin: 0px 15px 0px 0px;
+   }
 
+   &_block {
+      img {
+         width: 650px;
+         height: 400px;
+         border-radius: 15px;
+         object-fit: cover;
+      }
    }
 
    &_heading {
@@ -57,7 +65,7 @@
 }
 
 .slideInLeft {
-   animation-name: slideInLeft;
+   animation: slideInLeft 300ms;
 }
 
 .animated {
@@ -65,13 +73,17 @@
    animation-fill-mode: both;
 }
 
+
+
 @keyframes slideInLeft {
    0% {
-      transform: translate3d(-100%, 0, 0);
+      opacity: 0;
+      transform: translate3d(0, 0, -100%);
       visibility: visible;
    }
 
    100% {
+      opacity: 1;
       transform: translate3d(0, 0, 0);
    }
 }
